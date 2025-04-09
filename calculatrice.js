@@ -7,9 +7,14 @@ boutons.forEach(bouton => {
   bouton.addEventListener('click', () => {
     const valeur = bouton.textContent;
 
-    if (valeur === 'C') {
-      expression = '';
-      affichage.value = '';
+    if (valeur === 'C/←') {
+        if (isNaN(affichage.value)) {
+          expression = expression.slice(0, -1);
+          affichage.value = expression;
+        } else {
+          expression = '';
+          affichage.value = '';
+        }
     } else if (valeur === '=') {
       try {
         expression = eval(expression);
