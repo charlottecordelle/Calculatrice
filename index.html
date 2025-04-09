@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .calculatrice {
+            width: 270px;
+            border: 1px solid #c3c0c0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(168, 183, 174);
+        }
+        .affichage {
+            width: 100%;
+            height: 40px;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: right;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .boutons {
+            display: grid;
+            grid-template-columns: repeat(4, 60px);
+            gap: 10px;
+            border-radius: 20px;
+        }
+        button {
+            height: 40px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculatrice">
+        <input type="text" class="affichage" disabled />
+        <div class="boutons">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>0</button>
+            <button>C</button>
+            <button>=</button>
+            <button>+</button>
+        </div>
+    </div>
+   
+    <script src="calculatrice.js"></script>
+
+</body>
+</html>
